@@ -6,7 +6,7 @@ import std.stdio;
 import std.string;
 
 int firstLastDigit(string cs) {
-	auto numbers = cs.filter!(ch => ch.isDigit).map!(x => to!int([x])).array;
+	auto numbers = cs.filter!(isDigit).map!(x => to!int([x])).array;
 	return 10 * numbers.front + numbers.back;
 }
 
@@ -33,8 +33,8 @@ int firstLastDigitWords(string cs) {
 void main()
 {
 	auto lines = stdin.byLine.map!(to!string).map!(chomp).array;
-	auto p1 = lines.map!(l => l.firstLastDigit).sum;
-	auto p2 = lines.map!(l => l.firstLastDigitWords).sum;
+	auto p1 = lines.map!(firstLastDigit).sum;
+	auto p2 = lines.map!(firstLastDigitWords).sum;
 
 	writefln("part 1: %d", p1);
 	writefln("part 2: %d", p2);
