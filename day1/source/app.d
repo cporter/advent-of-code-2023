@@ -7,8 +7,7 @@ import std.string;
 
 int firstLastDigit(string cs) {
 	auto numbers = cs.filter!(ch => ch.isDigit).map!(x => to!int([x])).array;
-	int N = to!(int)(numbers.length);
-	return 10 * numbers[0] + numbers[N-1];
+	return 10 * numbers.front + numbers.back;
 }
 
 enum int[string] DIGITS = [
@@ -28,8 +27,7 @@ int firstLastDigitWords(string cs) {
 		}
 		cs = cs[1..$];
 	}
-	int N = to!(int)(numbers.length);
-	return 10 * numbers[0] + numbers[N-1];
+	return 10 * numbers.front + numbers.back;
 }
 
 void main()
