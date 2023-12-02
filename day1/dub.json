@@ -3,13 +3,12 @@
 		"Corey Porter"
 	],
 	"copyright": "Copyright © 2023, Corey Porter",
-	"description": "AOC2023 day 1",
-	"license": "MIT",
-	"name": "day1",
 	"dependencies": {
 		"libaoc": {
-			"version": "~master",
 			"path": "../libaoc"
 		}
-	}
+	},
+	"description": "AOC2023 day 1",
+	"license": "MIT",
+	"name": "day1"
 }

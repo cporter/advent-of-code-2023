@@ -30,7 +30,8 @@ int firstDigit(string s) {
 
 
 int firstLastDigitWords(string cs) {
-	auto numbers = cs.tails.map!(firstDigit).filter!(x => x >= 0).array;
+	auto numbers = cs.tails.map!(firstDigit)
+		.filter!(x => x >= 0).array;
 	return 10 * numbers.front + numbers.back;
 }
 

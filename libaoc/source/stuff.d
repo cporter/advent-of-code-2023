@@ -5,7 +5,7 @@ auto tails(R)(R r) {
 	struct Tails {
 		R l;
 		bool empty() const { return l.empty(); }
-		void popFront() { if (! l.empty()) { l = l[1..$]; } }
+		void popFront() { if (! l.empty()) { l.popFront(); } }
 		auto front() const { return l; }
 	}
 	return Tails(r);
