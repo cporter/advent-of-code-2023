@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Corey Porter"
+	],
+	"copyright": "Copyright © 2023, Corey Porter",
+	"description": "AOC Day 2",
+	"license": "NONE/LGPLv5",
+	"name": "day2"
+}
