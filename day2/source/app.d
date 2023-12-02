@@ -13,7 +13,7 @@ enum int[string] MAXIMUM = [
 
 void main()
 {
-	auto lines = stdin.byLine.map!(to!string).map!chomp.array;
+	auto lines = stdin.byLine.map!(to!string).map!chomp;
 	int p1 = 0;
 	int p2 = 0;
 
