@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/libaoc
+libaoc.so
+libaoc.dylib
+libaoc.dll
+libaoc.a
+libaoc.lib
+libaoc-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

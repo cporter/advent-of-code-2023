@@ -1,0 +1,10 @@
+{
+	"authors": [
+		"Corey Porter"
+	],
+	"copyright": "Copyright © 2023, Corey Porter",
+	"description": "AOC library",
+	"license": "proprietary",
+	"name": "libaoc",
+	"targetType": "library"
+}
