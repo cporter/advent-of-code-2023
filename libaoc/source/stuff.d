@@ -12,8 +12,8 @@ auto tails(R)(R r) {
 }
 
 unittest {
-    import std.array;
-    auto result = [1, 2, 3].tails.array;
-    assert(! result.empty);
-    assert([[1, 2, 3], [2, 3], [3]] == result);
+	import std.array;
+	auto result = [1, 2, 3].tails.array;
+	assert(! result.empty);
+	assert([[1, 2, 3], [2, 3], [3]] == result);
 }
