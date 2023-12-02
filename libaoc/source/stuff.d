@@ -1,7 +1,7 @@
 module stuff;
 
 auto tails(R)(R r) {
-    import std.range;
+	import std.range;
 	struct Tails {
 		R l;
 		bool empty() const { return l.empty(); }
