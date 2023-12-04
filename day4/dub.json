@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Corey Porter"
+	],
+	"copyright": "Copyright © 2023, Corey Porter",
+	"description": "AOC Day 4",
+	"license": "BOOST",
+	"name": "day4"
+}
