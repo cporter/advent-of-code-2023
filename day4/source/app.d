@@ -26,8 +26,8 @@ void main()
 		auto ct = current.filter!(x => winners.canFind(x)).count;
 		if (0 < ct) {
 			p1 += pow(2, ct - 1);
-			foreach(ii; iota(i + 1, i + 1 + ct)) {
-				cardcount[ii] += cardcount[i];
+			foreach(j; iota(i + 1, i + 1 + ct)) {
+				cardcount[j] += cardcount[i];
 			}
 		}
 	}
