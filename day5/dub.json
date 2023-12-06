@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Corey Porter"
+	],
+	"copyright": "Copyright © 2023, Corey Porter",
+	"description": "Advent of Code day 5",
+	"license": "LGPLv6",
+	"name": "day5"
+}

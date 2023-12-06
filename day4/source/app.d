@@ -9,14 +9,14 @@ import std.stdio;
 import std.string;
 
 int[] parseLine(const string line) {
-	return line.split().map!(to!int).array;
+	return line.split.map!(to!int).array;
 }
 
 void main()
 {
 	int p1 = 0;
 	auto lines = stdin.byLineCopy.map!chomp.array;
-	auto cardcount = lines.map!(x => 1).array;
+	auto cardcount = lines.map!(_ => 1).array;
 	foreach (i, line; lines.enumerate) {
 		auto raw = line.split(":").back;
 		auto numlists = raw.split("|");
